@@ -3,6 +3,9 @@ var tasksToDoEl = document.querySelector("#tasks-to-do");
 
 var createTaskHandler = function(event) { 
     event.preventDefault(); 
+
+    var createTaskHandler = function(event) { 
+        event.preventDefault(); 
   
     var listItemEl = document.createElement("li"); 
     listItemEl.className = "task-item"; 
@@ -11,4 +14,3 @@ var createTaskHandler = function(event) {
     }; 
   
     formEl.addEventListener("submit", createTaskHandler);
-  
